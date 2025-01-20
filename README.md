@@ -1,12 +1,13 @@
 # Profile Explorer
 
-This project is a Profile Explorer application built using React and Vite. It allows users to search and view profiles with a clean and responsive interface.
+This project is a Profile Explorer application built using React and Vite. It allows users to search and view profiles with a clean and responsive interface. Additionally, it integrates Google Maps to provide a visual representation of the selected profile's location.
 
 ## Features
 
 - Fast and responsive UI
 - Profile search functionality
 - Detailed profile view
+- Google Maps integration for location visualization
 - Modern design with CSS Flexbox
 
 ## Getting Started
@@ -27,7 +28,8 @@ In the project directory, you can run:
 
 ## Learn More
 
-To learn more about React and Vite, check out the following resources:
+To learn more about React, Vite, and Google Maps integration, check out the following resources:
 
 - [React Documentation](https://reactjs.org/docs/getting-started.html)
 - [Vite Documentation](https://vitejs.dev/guide/)
+- [Google Maps JavaScript API Documentation](https://developers.google.com/maps/documentation/javascript/overview)
