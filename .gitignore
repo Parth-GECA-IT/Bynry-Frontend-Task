@@ -23,4 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 .env
-Home.jsx
+src/Components/Home.jsx
