@@ -19,14 +19,30 @@ a li {
   margin: 0;
 }
 
+.bg {
+  width: 100vw;
+  height: 20vh;
+}
+
 .red {
   background-color: red;
   color: white
 }
 
+.black{
+  background-color: #000000;
+  height: 100vh;
+}
+
 .container {
-  background-color: antiquewhite;
-  height: 100%
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  /* background-color: rgb(28, 0, 75); */
+  background-color: #e5e5f7;
+  /* opacity: 0.8; */
+  background: linear-gradient(135deg, #444cf755 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #000ac1 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #171e9555 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #00078c 25%, #000000 25%) 0px 0/ 20px 20px;
 }
 
 .header {
@@ -40,68 +56,100 @@ a li {
   input {
     padding: 0.2rem 0.5rem;
     font-size: 1rem;
-    background-color: rgb(253, 255, 191);
+    background-color: rgb(191, 240, 255);
     border-radius: 0.75cap;
-    border-color: cornsilk;
+    border-color: rgb(231, 238, 255);
 
   }
 }
 
 ::placeholder {
-  color: yellowgreen;
+  color: rgb(50, 97, 205);
   opacity: 1;
   /* Firefox */
 }
 
 ::-ms-input-placeholder {
   /* Edge 12 -18 */
-  color: yellowgreen;
+  color: rgb(50, 97, 205);
 }
 
 .main {
-  flex-grow: 1;
+  width: 100%;
 }
 
 .profile-list {
   display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
   margin-top: 8vh;
+  flex-wrap: wrap;
 }
 
 .profile-card {
-  margin: 2vh 1vw;
-  background: rgb(255, 199, 142);
-  background: radial-gradient(circle, rgba(255, 199, 142, 1) 0%, rgba(251, 255, 229, 1) 38%, rgb(192, 206, 87) 100%);
+  margin: 2vh 2%;
+  width: 25vw;
+  color: white;
+  background: radial-gradient(circle, rgb(51, 40, 255) 0%, rgb(28, 0, 184) 38%, rgb(19, 0, 69) 100%);
   text-align: center;
   border-radius: .5cap;
-  box-shadow: 0px 5px 2px blue, 0px 7px 3px red, 0px 9px 4px green;
-  box-shadow: 10px 10px 12px rgb(63, 50, 0);
+  box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.581);
+  flex-grow: 1 1;
 
   img {
-    margin: 1rem;
-    width: 30vw;
+    margin: 5%;
+    width: 90%;
     height: 30vh;
     object-fit: contain;
     background-color: black;
     border-radius: 5%;
+  }
 
-    /* border: 2px dotted rgb(255, 255, 255); */
-    /* border-style: dotted dashed; */
+  h3{
+    text-shadow: rgb(0, 0, 0) 0px 0px 5px;
   }
 
   p {
     text-align: center;
   }
 
-  button {
+  .btn {
+    border-radius: 10%;
+  }
+
+  div button {
     background-color: maroon;
     color: aliceblue;
     font-size: 1.2rem;
-    padding: 1rem 6em;
-    margin: 1rem;
+    padding: 1rem 2em;
+    margin: 5%;
     font-weight: 600;
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent;
+    border-image-source: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-image-slice: 1;
+    animation: 3000ms linear 0s infinite normal none running myEffect;
+
+  }
+}
+
+@keyframes myEffect {
+  0% {
+    border-image: linear-gradient(to right bottom, rgb(184, 39, 252) 0%, rgb(44, 144, 252) 25%, rgb(184, 253, 51) 50%, rgb(254, 200, 55) 75%, rgb(253, 24, 146) 100%) 1 / 1 / 0 stretch;
+  }
+
+  50% {
+    border-image: linear-gradient(45deg, rgb(251, 0, 148), rgb(0, 0, 255), rgb(0, 255, 0), rgb(255, 255, 0), rgb(255, 0, 0), rgb(251, 0, 148), rgb(0, 0, 255), rgb(0, 255, 0), rgb(255, 255, 0), rgb(255, 0, 0)) 1 / 1 / 0 stretch;
+  }
+
+  100% {
+    border-image: linear-gradient(to right bottom, rgb(184, 39, 252) 0%, rgb(44, 144, 252) 25%, rgb(184, 253, 51) 50%, rgb(254, 200, 55) 75%, rgb(253, 24, 146) 100%) 1 / 1 / 0 stretch;
+
   }
 }
 
@@ -110,11 +158,11 @@ a li {
   margin: 0 auto;
 }
 
-.map-container {
+/* .map-container {
   display: flex;
   width: 100%;
-}
+} */
 
-.mapbox{
+.mapbox {
   margin: 0 auto;
 }

@@ -18,7 +18,7 @@ const App = () => {
         setProfiles([
             {
                 id: 1,
-                name: 'Parth',
+                name: 'Atharva',
                 description: 'Software Engineer',
                 photo: 'https://media.istockphoto.com/id/1062439436/photo/i-know-ill-get-to-that-milestone.jpg?s=612x612&w=0&k=20&c=13QATNeGy55dYZNSsLAKeIs-OAErtekKCDJYRhSeuRw=',
                 address: '1600 Amphitheatre Parkway, Mountain View, CA',
@@ -73,7 +73,8 @@ const App = () => {
                             <img src={profile.photo} alt={profile.name} />
                             <h3>{profile.name}</h3>
                             <p>{profile.description}</p>
-                            <button onClick={() => handleProfileClick(profile)}>Summary</button>
+                            <div className="btn">
+                            <button onClick={() => handleProfileClick(profile)}>Summary</button></div>
                         </div>
                     ))}
                 </div>
