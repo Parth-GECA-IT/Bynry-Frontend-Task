@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Navbar from './Components/Navbar';
+import env from 'react-dotenv';
 import './App.css';
 
 const App = () => {
@@ -84,7 +85,7 @@ const App = () => {
                         <div style={{ width: "80vw", height: "80vh" }} className="mapbox">
                             <GoogleMapReact
 
-                                bootstrapURLKeys={{ key: 'Goole_maps_API_Key' }}
+                                bootstrapURLKeys={{ key: import.meta.env.VITE_Goole_maps_API_Key }}
                                 defaultCenter={selectedProfile.coordinates}
                                 defaultZoom={18}
                             >

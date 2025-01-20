@@ -6,7 +6,8 @@ const User = () => {
   return (
     <div>
       <Navbar/>
-      I'm a User {params.username}.
+      {/* I'm a User {params.username}. */}
+      User's Page
     </div>
   )
 }
