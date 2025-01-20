@@ -1,0 +1,69 @@
+nav{
+  display: flex;
+  gap: 34px;
+  background-color: black;
+  color: white;
+}
+
+li{
+  list-style: none;
+  padding: 23px;
+}
+
+a li {
+  color: white;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.red{
+  background-color: red;
+  color: white
+}
+
+.container {
+  background-color: antiquewhite;
+  height: 100%
+  
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  color: firebrick;
+
+  input{
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+    background-color: rgb(253, 255, 191);
+    border-radius: 0.75cap;
+    border-color: cornsilk;
+    
+  }
+}
+::placeholder {
+  color: yellowgreen;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder { /* Edge 12 -18 */
+  color: yellowgreen;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.loading {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.map-container {
+  display: flex;
+}
