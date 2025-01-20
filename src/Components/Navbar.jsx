@@ -7,8 +7,8 @@ const Navbar = () => {
     <div>
       <nav>
         <NavLink className={(e)=>{return e.isActive?"red": "" }} to="/"><li>Home</li></NavLink>
-        <NavLink className={(e)=>{return e.isActive?"red": "" }} to="/user/Manish"><li>Users</li></NavLink>
-        <NavLink className={(e)=>{return e.isActive?"red": "" }} to="/user/Parth"><li>About</li></NavLink>
+        <NavLink className={(e)=>{return e.isActive?"red": "" }} to="/user/Parth"><li>Users</li></NavLink>
+        <NavLink className={(e)=>{return e.isActive?"red": "" }} to="/"><li>About</li></NavLink>
       </nav>
     </div>
   )
