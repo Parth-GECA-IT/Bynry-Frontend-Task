@@ -84,7 +84,7 @@ const App = () => {
                         <div style={{ width: "80vw", height: "80vh" }} className="mapbox">
                             <GoogleMapReact
 
-                                bootstrapURLKeys={{ key: 'Google_Maps_API_Key' }}
+                                bootstrapURLKeys={{ key: 'AIzaSyBlM7uOLIvbJ_XETLm5w6Qph8q7PRvuzfM' }}
                                 defaultCenter={selectedProfile.coordinates}
                                 defaultZoom={18}
                             >
